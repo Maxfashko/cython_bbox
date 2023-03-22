@@ -6,7 +6,7 @@ from distutils.core import Distribution, Extension
 from Cython.Build import cythonize
 
 
-compile_args = ["-march=native", "-O3", "-msse", "-msse2", "-mfma", "-mfpmath=sse"]
+compile_args = ["-march=native", "-O3"]
 link_args = []
 include_dirs = []
 libraries = ["m"]
