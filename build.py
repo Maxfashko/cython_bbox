@@ -7,9 +7,9 @@ from distutils.core import Distribution, Extension
 from Cython.Build import cythonize
 
 if platform.processor() == "aarch64":
-    compile_args = ["-march=native", "-O3"]
+    compile_args = ["-O3"]
 else:
-    compile_args = ["-march=native", "-O3", "-msse", "-msse2", "-mfma", "-mfpmath=sse"]
+    compile_args = ["-O3", "-mfpmath=sse"]
     
 link_args = []
 include_dirs = []
